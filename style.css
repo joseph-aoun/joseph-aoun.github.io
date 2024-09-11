@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: #fdf0d562;
+    overflow: hidden;
+}
+
+nav a {
+    display: inline;
+    padding: 14px 20px;
+    text-decoration: none;
+    color: #3A3335;
+    font-size: 17px;
+    float: right;
+    font-family: 'Roboto', sans-serif;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav a:hover {
+    transition: 0.3s;
+    color: hsla(343, 7%, 21%, 0.617);
+}
+
+.container {
+    width: 80%;
+    margin-top: 15px;
+    overflow: hidden;
+    display: block;
+    align-items: center;
+}
