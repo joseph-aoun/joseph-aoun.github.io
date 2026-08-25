@@ -1,40 +1,321 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Home</title>
-        <link rel="stylesheet" href="style.css">
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-        <nav>
-            <ul>
-                <li><a href="contact">Contact</a></li>
-                <li><a href="work-experience">Work Experience</a></li>
-                <li><a href="projects">Projects</a></li>
-                <li><a href="index">About Me</a></li>
-                <li><a href="assignments">Data Science / Machine Learning</a></li>
-            </ul>
-            <hr> 
-        </nav>
-        <div class="container">
-            <div class="card">
-                <div class="card-content">
-                    <p>Welcome to my personal website! My name is <strong>Joseph Aoun</strong> and I am a student at the American University of Beirut and an exchange student at Boston University
-                        studying Computer Science Engineering. I am an avid competitive programmer, having participated in numerous
-                        contests like the Lebanese Collegiate Programming Contest (LCPC) and Arab Collegiate Programming Contest (ACPC).
-                        These experiences have strengthened my problem-solving skills and fueled my passion for software engineering.
-                        Feel free to check out my work experience, projects, and contact me if you have any questions!</p>
-                    <div class="social-links">
-                        <a href="https://www.linkedin.com/in/joseph-aoun-5242bb254?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">LinkedIn</a>
-                        <a href="https://github.com/joseph-aoun" target="_blank">GitHub</a>
-                    </div>
-                </div>
-                <img src="img/image_joseph.jpg" alt="Joseph Aoun">
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Joseph Aoun — Software Engineer & Competitive Programmer</title>
+  <meta name="description" content="Joseph Aoun is a software engineer and competitive programmer pursuing an M.S. in Computer Science at Columbia University. Former AWS SDE, ICPC North America Championship competitor, and IEEEXtreme top-14 worldwide finisher.">
+  <meta name="author" content="Joseph Aoun">
+  <meta name="theme-color" content="#0a0d12">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Joseph Aoun — Software Engineer & Competitive Programmer">
+  <meta property="og:description" content="Production systems, algorithms, competitive programming, and machine learning.">
+  <meta property="og:url" content="https://joseph-aoun.github.io/">
+  <meta property="og:image" content="https://joseph-aoun.github.io/assets/og-card.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://joseph-aoun.github.io/">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/site.css">
+  <script>
+    (function () {
+      const saved = localStorage.getItem('theme');
+      const preferred = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+      document.documentElement.dataset.theme = saved || preferred;
+    })();
+  </script>
+  <script defer src="assets/site.js"></script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Joseph Aoun",
+    "url": "https://joseph-aoun.github.io/",
+    "sameAs": [
+      "https://github.com/joseph-aoun",
+      "https://www.linkedin.com/in/joseph-aoun-5242bb254"
+    ],
+    "alumniOf": [
+      {"@type": "CollegeOrUniversity", "name": "American University of Beirut"},
+      {"@type": "CollegeOrUniversity", "name": "Boston University"}
+    ],
+    "affiliation": {"@type": "CollegeOrUniversity", "name": "Columbia University"},
+    "jobTitle": "Software Engineer"
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <div class="nav-shell">
+      <a class="brand" href="#top" aria-label="Joseph Aoun home">
+        <span class="brand-mark" aria-hidden="true">JA</span>
+        <span>Joseph Aoun</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="sr-only">Toggle navigation</span>
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#competitive">Competitive</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+        <a class="nav-resume" href="Joseph_Aoun_Resume.pdf" target="_blank" rel="noreferrer">Resume</a>
+        <button class="theme-toggle" type="button" aria-label="Switch color theme" title="Switch color theme">
+          <span aria-hidden="true">◐</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero section">
+      <div class="shell hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Software engineer · competitive programmer</p>
+          <h1>I build reliable systems and obsess over hard problems.</h1>
+          <p class="hero-lede">
+            I'm Joseph — an M.S. Computer Science student at Columbia University and former AWS software engineer.
+            My work sits at the intersection of distributed systems, algorithms, and machine learning.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#experience">See my work</a>
+            <a class="button ghost" href="Joseph_Aoun_Resume.pdf" target="_blank" rel="noreferrer">View resume</a>
+          </div>
+          <div class="hero-links" aria-label="External profiles">
+            <a href="https://github.com/joseph-aoun" target="_blank" rel="noreferrer">GitHub ↗</a>
+            <a href="https://www.linkedin.com/in/joseph-aoun-5242bb254" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+            <a href="mailto:jea2199@columbia.edu">Email ↗</a>
+          </div>
+        </div>
+
+        <div class="hero-side reveal">
+          <div class="portrait-wrap">
+            <img src="img/image_joseph.jpg" alt="Portrait of Joseph Aoun" width="420" height="500" onerror="this.onerror=null;this.src='assets/avatar-placeholder.svg';">
+            <div class="portrait-caption">
+              <span class="status-dot" aria-hidden="true"></span>
+              New York, NY · Columbia CS
             </div>
-        </div>  
-    </body>
-    <footer>
-        <p>&copy; 2021 Joseph Aoun</p>
-    </footer>
+          </div>
+        </div>
+      </div>
+
+      <div class="shell metric-strip reveal" aria-label="Selected highlights">
+        <div class="metric"><strong>100+</strong><span>requests parallelized in a Tier-1 AWS service</span></div>
+        <div class="metric"><strong>200+</strong><span>datacenters protected in one AWS region alone</span></div>
+        <div class="metric"><strong>92×</strong><span>MobileNet compression, 12 MB → 130 KB</span></div>
+        <div class="metric"><strong>#14</strong><span>worldwide at IEEEXtreme 2024</span></div>
+      </div>
+    </section>
+
+    <section id="experience" class="section bordered-section">
+      <div class="shell">
+        <div class="section-heading reveal">
+          <p class="eyebrow">01 / Experience</p>
+          <h2>Production engineering with measurable impact.</h2>
+          <p>I like problems where correctness, concurrency, failure handling, and operational discipline actually matter.</p>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <div class="timeline-meta">
+              <p class="company">Amazon Web Services</p>
+              <p>Dublin, Ireland</p>
+              <p>Jul 2025 — Aug 2026</p>
+            </div>
+            <div class="timeline-content">
+              <div class="role-row">
+                <h3>Software Development Engineer</h3>
+                <span class="tag">Java · AWS · Distributed Systems</span>
+              </div>
+              <ul>
+                <li>Re-architected a Tier-1 network-provisioning service from single-threaded execution to a bounded scheduled thread pool with dynamic concurrency control, eliminating head-of-line blocking and parallelizing 100+ requests.</li>
+                <li>Designed end-to-end integration testing from scratch with dedicated hosts and an AWS CDK CI/CD pipeline, running live provisioning workflows in every commercial AWS region to gate releases.</li>
+                <li>Built a per-datacenter circuit breaker that halts dispatch on fault signals, preventing localized failures from propagating fleet-wide; it protects 200+ datacenters in a single region alone.</li>
+                <li>Diagnosed 20+ launch-blocking concurrency, versioning, and state-filtering defects and migrated the service to a new internal platform with zero downtime.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-meta">
+              <p class="company">Ubilite</p>
+              <p>Beirut, Lebanon</p>
+              <p>Jun 2024 — Aug 2024</p>
+            </div>
+            <div class="timeline-content">
+              <div class="role-row">
+                <h3>Machine Learning Engineer Intern</h3>
+                <span class="tag">TinyML · TensorFlow Lite</span>
+              </div>
+              <ul>
+                <li>Compressed a MobileNet face-detection model from 12 MB to 130 KB using quantization and pruning while holding F1 at 85%.</li>
+                <li>Deployed the model on a Wi-Fi microchip with under 200 KB SRAM, enabling on-device inference for low-cost smart-home security devices.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-meta">
+              <p class="company">American University of Beirut</p>
+              <p>Beirut, Lebanon</p>
+              <p>Jan 2022 — Aug 2024</p>
+            </div>
+            <div class="timeline-content">
+              <div class="role-row">
+                <h3>Teaching Assistant</h3>
+                <span class="tag">Algorithms · Programming</span>
+              </div>
+              <ul>
+                <li>Taught and graded 280+ students across Design & Analysis of Algorithms and Introduction to Programming.</li>
+                <li>Co-developed the department's first auto-grading judge, halving grading time per problem and accelerating feedback for 500+ students.</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="shell">
+        <div class="section-heading reveal">
+          <p class="eyebrow">02 / Selected projects</p>
+          <h2>Algorithms first. Then systems. Then everything else.</h2>
+          <p>A deliberately small selection — the projects that best show how I think, not every repository I've ever made.</p>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card featured reveal">
+            <div class="project-topline"><span>01</span><span>Python · NLP</span></div>
+            <h3>Chinese Character Transliteration</h3>
+            <p>Character-level n-gram language model mapping English pronunciation to more than 10,000 Chinese characters for keyboard-based text input.</p>
+            <div class="project-proof"><strong>67% → 87%</strong><span>next-character accuracy after Laplace and Kneser-Ney smoothing</span></div>
+            <a class="text-link" href="https://github.com/joseph-aoun/Chinese-Character-Predictor" target="_blank" rel="noreferrer">View repository ↗</a>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-topline"><span>02</span><span>C++ · Data Structures</span></div>
+            <h3>Fully Retroactive Disjoint Set Union</h3>
+            <p>Implemented a fully retroactive DSU using link-cut trees and splay trees, supporting historical connectivity queries while allowing updates in the past.</p>
+            <a class="text-link" href="https://github.com/joseph-aoun/Fully-Retroactive-DSU" target="_blank" rel="noreferrer">View repository ↗</a>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-topline"><span>03</span><span>Python · TensorFlow Lite</span></div>
+            <h3>TinyML Model Compression Study</h3>
+            <p>Built an experimental compression pipeline around quantization, pruning, and clustering to compare model-size and performance tradeoffs for constrained devices.</p>
+            <a class="text-link" href="https://github.com/joseph-aoun/TinyML-Model-Compression-Paper" target="_blank" rel="noreferrer">View repository ↗</a>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-topline"><span>04</span><span>Python · Game AI</span></div>
+            <h3>Lebanese Backgammon AI</h3>
+            <p>Built an AI player using Expectiminimax with alpha-beta pruning, including game-specific move generation, chance nodes, and evaluation logic.</p>
+            <a class="text-link" href="https://github.com/joseph-aoun/backgammon-AI" target="_blank" rel="noreferrer">View repository ↗</a>
+          </article>
+        </div>
+
+        <div class="archive-callout reveal">
+          <div>
+            <p class="eyebrow">Coursework archive</p>
+            <h3>Want the ML/data-science experiments too?</h3>
+          </div>
+          <a class="button ghost" href="assignments.html">Browse BU coursework</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="competitive" class="section bordered-section">
+      <div class="shell">
+        <div class="section-heading reveal">
+          <p class="eyebrow">03 / Competitive programming</p>
+          <h2>Years of deliberate practice under contest pressure.</h2>
+        </div>
+
+        <div class="achievement-grid">
+          <article class="achievement reveal">
+            <span class="achievement-rank">23rd</span>
+            <div><h3>ICPC North America Championship 2025</h3><p>One of 52 teams qualifying from 1,000+ teams across the U.S. and Canada; bronze medalist at the North-Eastern North America Regional.</p></div>
+          </article>
+          <article class="achievement reveal">
+            <span class="achievement-rank">#14</span>
+            <div><h3>IEEEXtreme 2024</h3><p>14th worldwide and 1st in the U.S. among 8,500+ teams.</p></div>
+          </article>
+          <article class="achievement reveal">
+            <span class="achievement-rank">2×</span>
+            <div><h3>LCPC Silver Medalist</h3><p>Two-time silver medalist in the Lebanese Collegiate Programming Contest; twice qualified for ACPC.</p></div>
+          </article>
+        </div>
+
+        <div class="skills-row reveal">
+          <div><span class="label">Languages</span><p>C / C++23 · Python · Java · SQL · Bash</p></div>
+          <div><span class="label">Systems</span><p>Concurrency · AWS CDK · CloudWatch · DynamoDB · CI/CD · Linux · Git</p></div>
+          <div><span class="label">ML / Data</span><p>TensorFlow · TensorFlow Lite · Model Compression · NumPy · pandas</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="section">
+      <div class="shell">
+        <div class="section-heading reveal">
+          <p class="eyebrow">04 / Education</p>
+          <h2>Computer science across Beirut, Boston, and New York.</h2>
+        </div>
+
+        <div class="education-list">
+          <article class="education-card reveal">
+            <div>
+              <h3>Columbia University</h3>
+              <p>M.S. in Computer Science · Machine Learning Track</p>
+            </div>
+            <div class="education-right"><span>2026 — 2027</span><small>CMA-CGM Excellence Fund Scholarship</small></div>
+          </article>
+          <article class="education-card reveal">
+            <div>
+              <h3>American University of Beirut</h3>
+              <p>B.E. in Computer & Communications Engineering · GPA 3.8 / 4.0</p>
+            </div>
+            <div class="education-right"><span>2021 — 2025</span><small>Dean's Honor List · MEPI Scholarship</small></div>
+          </article>
+          <article class="education-card reveal">
+            <div>
+              <h3>Boston University</h3>
+              <p>Exchange Semester</p>
+            </div>
+            <div class="education-right"><span>Fall 2024</span><small>Computer Science & Data Science coursework</small></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <div class="shell contact-grid reveal">
+        <div>
+          <p class="eyebrow">05 / Contact</p>
+          <h2>Have an interesting engineering problem?</h2>
+          <p>I'm based in New York and always happy to talk about software systems, algorithms, competitive programming, or technically ambitious work.</p>
+        </div>
+        <div class="contact-actions">
+          <a class="button primary" href="mailto:jea2199@columbia.edu">jea2199@columbia.edu</a>
+          <div class="contact-links">
+            <a href="https://github.com/joseph-aoun" target="_blank" rel="noreferrer">GitHub ↗</a>
+            <a href="https://www.linkedin.com/in/joseph-aoun-5242bb254" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+            <a href="Joseph_Aoun_Resume.pdf" target="_blank" rel="noreferrer">Resume ↗</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="shell footer-inner">
+      <p>© <span id="year">2026</span> Joseph Aoun</p>
+      <p>Built with plain HTML, CSS, and JavaScript.</p>
+    </div>
+  </footer>
+</body>
 </html>

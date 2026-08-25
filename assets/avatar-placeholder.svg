@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 500" role="img" aria-label="Joseph Aoun initials placeholder">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#10151d"/><stop offset="1" stop-color="#18251f"/></linearGradient></defs>
+  <rect width="420" height="500" fill="url(#g)"/>
+  <circle cx="210" cy="220" r="105" fill="none" stroke="#2c3b46" stroke-width="2"/>
+  <text x="210" y="245" text-anchor="middle" font-family="system-ui,sans-serif" font-size="88" font-weight="800" fill="#71e0b5">JA</text>
+  <text x="210" y="390" text-anchor="middle" font-family="monospace" font-size="15" fill="#99a4b3">replace img/image_joseph.jpg</text>
+</svg>
