@@ -288,7 +288,7 @@ button { font: inherit; }
 .archive-callout .eyebrow { margin-bottom: 6px; }
 .archive-callout h3 { margin: 0; font-size: 1.18rem; }
 
-.achievement-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+.achievement-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
 .achievement {
   padding: 28px;
   border: 1px solid var(--border);
